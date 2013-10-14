@@ -5,10 +5,17 @@ namespace mvc_iis.Controllers
 {
     public class VoucherController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int storeNumber)
         {
-            return View(Mock.Vouchers(123));
+            return View(Mock.Vouchers(storeNumber));
         }
+
+
+        public JsonResult Json(int storeNumber)
+        {
+            return Json(Mock.Vouchers(storeNumber), JsonRequestBehavior.AllowGet);
+        }
+
 
     }
 }

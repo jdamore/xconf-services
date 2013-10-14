@@ -14,7 +14,7 @@ namespace wcf_iis
         [WebInvoke(
             Method          = "GET",
             ResponseFormat  = WebMessageFormat.Xml,
-            BodyStyle       = WebMessageBodyStyle.Wrapped,
+            BodyStyle       = WebMessageBodyStyle.Bare,
             UriTemplate     = "xml/")]
         List<Service> LocationsXml();
 
@@ -22,7 +22,7 @@ namespace wcf_iis
         [WebInvoke(
             Method = "GET",
             ResponseFormat = WebMessageFormat.Xml,
-            BodyStyle = WebMessageBodyStyle.Wrapped,
+            BodyStyle = WebMessageBodyStyle.Bare,
             UriTemplate = "xml/{service}")]
         string LocationXml(string service);
     }

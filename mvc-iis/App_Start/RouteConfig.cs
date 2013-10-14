@@ -14,9 +14,15 @@ namespace mvc_iis
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "Voucher",
+                url: "{controller}/{storeNumber}",
+                defaults: new { controller = "Voucher", action = "Index", storeNumber = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "VoucherJson",
+                url: "{controller}/json/{storeNumber}",
+                defaults: new { controller = "Voucher", action = "Json", storeNumber = UrlParameter.Optional }
             );
         }
     }

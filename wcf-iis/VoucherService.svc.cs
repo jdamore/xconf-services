@@ -18,7 +18,7 @@ namespace wcf_iis
         [WebInvoke(
             Method = "GET",
             ResponseFormat = WebMessageFormat.Xml,
-            BodyStyle = WebMessageBodyStyle.Wrapped,
+            BodyStyle = WebMessageBodyStyle.Bare,
             UriTemplate = "xml/{storeNumber}")]
         List<Voucher> VouchersXml(string storeNumber);
 
@@ -26,7 +26,7 @@ namespace wcf_iis
         [WebInvoke(
             Method          = "GET",
             ResponseFormat  = WebMessageFormat.Json,
-            BodyStyle       = WebMessageBodyStyle.Wrapped,
+            BodyStyle       = WebMessageBodyStyle.Bare,
             UriTemplate     = "json/{storeNumber}")]
         List<Voucher> VouchersJson(string storeNumber);
     }
