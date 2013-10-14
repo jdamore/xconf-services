@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Linq;
 using System.Xml;
 
-namespace wcf_iis.helper
+namespace xconf_core.helper
 {
     public class ConfigHelper
     {

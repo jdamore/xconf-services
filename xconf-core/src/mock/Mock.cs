@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
+using xconf_core.model;
 
-using wcf_iis.model;
-
-namespace wcf_iis.mock
+namespace xconf_core.mock
 {
     public class Mock
     {

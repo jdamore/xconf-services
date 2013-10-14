@@ -1,5 +1,5 @@
 ﻿
-namespace wcf_iis.model
+namespace xconf_core.model
 {
     public class Voucher
     {

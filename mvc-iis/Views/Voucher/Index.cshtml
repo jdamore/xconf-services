@@ -1,0 +1,27 @@
+﻿@model List<xconf_core.model.Voucher>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Voucher</title>
+    </head>
+    <body>
+        <div>
+            <h1>Here should come the vouchers</h1>
+            
+            
+    @foreach (var voucher in Model)
+    {
+        <li>
+            <img src="@voucher.Image" class="voucher-image" alt="Image for @voucher.Code" />
+            <p>@voucher.Description</p>
+        </li>
+    }
+        </div>
+    </body>
+</html>

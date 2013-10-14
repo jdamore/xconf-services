@@ -1,5 +1,5 @@
 ﻿
-namespace wcf_iis.helper
+namespace xconf_core.helper
 {
     public class UrlHelper
     {

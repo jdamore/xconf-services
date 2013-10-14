@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using wcf_iis.mock;
-using wcf_iis.model;
 using wcf_iis.request;
+using xconf_core.mock;
+using xconf_core.model;
 
 namespace wcf_iis
 {

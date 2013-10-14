@@ -2,8 +2,8 @@
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using wcf_iis.helper;
-using wcf_iis.model;
+using xconf_core.helper;
+using xconf_core.model;
 
 namespace wcf_iis
 {
@@ -32,7 +32,7 @@ namespace wcf_iis
 
         public List<Service> LocationsXml()
         {
-            var serviceLocations = new List<model.Service>();
+            var serviceLocations = new List<Service>();
             foreach (var service in ConfigHelper.GetServices())
             {
                 serviceLocations.Add(new Service

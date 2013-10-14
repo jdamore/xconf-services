@@ -69,17 +69,11 @@
     <Compile Include="LocatorService.svc.cs">
       <DependentUpon>LocatorService.svc</DependentUpon>
     </Compile>
-    <Compile Include="src\helper\ConfigHelper.cs" />
-    <Compile Include="src\helper\SerializationHelper.cs" />
-    <Compile Include="src\helper\UrlHelper.cs" />
-    <Compile Include="src\model\Service.cs" />
-    <Compile Include="src\request\BaseRequest.cs" />
-    <Compile Include="src\request\VouchersRequest.cs" />
+    <Compile Include="request\BaseRequest.cs" />
+    <Compile Include="request\VouchersRequest.cs" />
     <Compile Include="VoucherService.svc.cs">
       <DependentUpon>VoucherService.svc</DependentUpon>
     </Compile>
-    <Compile Include="src\mock\Mock.cs" />
-    <Compile Include="src\model\Voucher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +86,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xconf-core\xconf-core.csproj">
+      <Project>{14a6f198-9a5c-4de6-9aab-751ccbc3b39d}</Project>
+      <Name>xconf-core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

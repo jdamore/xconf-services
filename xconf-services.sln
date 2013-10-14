@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcf-iis", "wcf-iis\wcf-iis.csproj", "{85EED0A6-C52F-4703-BD18-F6846BDFA0D6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B70A9E64-F042-4114-BDA3-8E533776C6A9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		XConf-Services-soapui-project.xml = XConf-Services-soapui-project.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-iis", "mvc-iis\mvc-iis.csproj", "{36621866-ADD9-4A0D-A11D-3D397EBE29CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xconf-core", "xconf-core\xconf-core.csproj", "{14A6F198-9A5C-4DE6-9AAB-751CCBC3B39D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +23,14 @@ Global
 		{85EED0A6-C52F-4703-BD18-F6846BDFA0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85EED0A6-C52F-4703-BD18-F6846BDFA0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85EED0A6-C52F-4703-BD18-F6846BDFA0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36621866-ADD9-4A0D-A11D-3D397EBE29CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36621866-ADD9-4A0D-A11D-3D397EBE29CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36621866-ADD9-4A0D-A11D-3D397EBE29CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36621866-ADD9-4A0D-A11D-3D397EBE29CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A6F198-9A5C-4DE6-9AAB-751CCBC3B39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A6F198-9A5C-4DE6-9AAB-751CCBC3B39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A6F198-9A5C-4DE6-9AAB-751CCBC3B39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A6F198-9A5C-4DE6-9AAB-751CCBC3B39D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

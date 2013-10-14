@@ -2,3 +2,11 @@ wcf-iis/obj
 wcf-iis/obj/*
 wcf-iis/bin 
 wcf-iis/bin/*
+mvc-iis/obj
+mvc-iis/obj/*
+mvc-iis/bin 
+mvc-iis/bin/*
+xconf-core/obj
+xconf-core/obj/*
+xconf-core/bin 
+xconf-core/bin/*
