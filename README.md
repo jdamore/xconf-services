@@ -1,6 +1,6 @@
 
-ThoughtWorks 2013 Sydney XConf - Presentation Code
-==================================================
+ThoughtWorks 2013 Sydney XConf
+==============================
 
 Content
 -------
