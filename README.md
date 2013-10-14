@@ -20,19 +20,22 @@ Interfaces
 ----------
 
 * wcf-iis VoucherService
-
+<pre>
 SOAP	vouchers			POST	http://localhost:90/wcf-iis/VoucherService.svc/Vouchers
 WEB		json/{storeNumber}	GET		http://localhost:90/wcf-iis/VoucherService.svc/json/{STORENUMBER}
 WEB		xml/{storeNumber}	GET		http://localhost:90/wcf-iis/VoucherService.svc/xml/{STORENUMBER}
+</pre>
 
 * wcf-iis LocatorService
-
+<pre>
 WEB		xml/				GET		http://localhost:90/wcf-iis/LocatorService.svc/xml/
 WEB		xml/{service}		GET		http://localhost:90/wcf-iis/LocatorService.svc/xml/{SERVICE}
+</pre>
 
 * mvc-iis VoucherController
-
+<pre>
 WEB		{storeNumber}		GET		http://localhost:90/mvc-iis/Voucher/{STORENUMBER}
 WEB		json/{storeNumber}	GET		http://localhost:90/mvc-iis/Voucher/json/{STORENUMBER}
+</pre>
 
 
