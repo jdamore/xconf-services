@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="XConf Services" resourceRoot="" soapui-version="4.5.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="BasicHttpBinding_IVoucherService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IVoucherService" soapVersion="1_1" anonymous="optional" definition="http://localhost:90/wcf-iis/VoucherService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:90/wcf-iis/VoucherService.svc?wsdl"><con:part><con:url>http://localhost:90/wcf-iis/VoucherService.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="VoucherService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVoucherService_VouchersXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:VouchersXml"/>
+  </wsdl:message>
+  <wsdl:message name="IVoucherService_VouchersXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VouchersXmlResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IVoucherService_VouchersJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:VouchersJson"/>
+  </wsdl:message>
+  <wsdl:message name="IVoucherService_VouchersJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VouchersJsonResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IVoucherService">
+    <wsdl:operation name="VouchersXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVoucherService/VouchersXml" message="tns:IVoucherService_VouchersXml_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IVoucherService/VouchersXmlResponse" message="tns:IVoucherService_VouchersXml_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="VouchersJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVoucherService/VouchersJson" message="tns:IVoucherService_VouchersJson_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IVoucherService/VouchersJsonResponse" message="tns:IVoucherService_VouchersJson_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVoucherService" type="tns:IVoucherService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="VouchersXml">
+      <soap:operation soapAction="http://tempuri.org/IVoucherService/VouchersXml" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VouchersJson">
+      <soap:operation soapAction="http://tempuri.org/IVoucherService/VouchersJson" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VoucherService">
+    <wsdl:port name="BasicHttpBinding_IVoucherService" binding="tns:BasicHttpBinding_IVoucherService">
+      <soap:address location="http://localhost:90/wcf-iis/VoucherService.svc/soap"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+  <xs:element name="VouchersXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VouchersXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VouchersXmlResult" nillable="true" type="q1:VouchersResponse" xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VouchersJson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VouchersJsonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VouchersJsonResult" nillable="true" type="q2:VouchersResponse" xmlns:q2="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_iis.data" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_iis.data">
+  <xs:import schemaLocation="http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+  <xs:complexType name="VouchersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Vouchers" nillable="true" type="q1:ArrayOfVoucher" xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VouchersResponse" nillable="true" type="tns:VouchersResponse"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_iis.model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_iis.model">
+  <xs:complexType name="ArrayOfVoucher">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Voucher" nillable="true" type="tns:Voucher"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVoucher" nillable="true" type="tns:ArrayOfVoucher"/>
+  <xs:complexType name="Voucher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Voucher" nillable="true" type="tns:Voucher"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/VoucherService.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:90/wcf-iis/VoucherService.svc/soap</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/IVoucherService/VouchersJson" name="VouchersJson" bindingOperationName="VouchersJson" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/VoucherService.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:VouchersJson>
+         <!--Optional:-->
+         <tem:storeNumber>ccd</tem:storeNumber>
+      </tem:VouchersJson>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IVoucherService/VouchersJson"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/IVoucherService/VouchersXml" name="VouchersXml" bindingOperationName="VouchersXml" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/VoucherService.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:VouchersXml>
+         <!--Optional:-->
+         <tem:storeNumber>cdcds</tem:storeNumber>
+      </tem:VouchersXml>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IVoucherService/VouchersXml"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="BasicHttpBinding_IStoreService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IStoreService" soapVersion="1_1" anonymous="optional" definition="http://localhost:90/wcf-iis/StoreService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:90/wcf-iis/StoreService.svc?wsdl"><con:part><con:url>http://localhost:90/wcf-iis/StoreService.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="StoreService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStoreService_StoresXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:StoresXml"/>
+  </wsdl:message>
+  <wsdl:message name="IStoreService_StoresXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StoresXmlResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IStoreService_StoresJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:StoresJson"/>
+  </wsdl:message>
+  <wsdl:message name="IStoreService_StoresJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StoresJsonResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IStoreService">
+    <wsdl:operation name="StoresXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/StoresXml" message="tns:IStoreService_StoresXml_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/StoresXmlResponse" message="tns:IStoreService_StoresXml_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="StoresJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStoreService/StoresJson" message="tns:IStoreService_StoresJson_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IStoreService/StoresJsonResponse" message="tns:IStoreService_StoresJson_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IStoreService" type="tns:IStoreService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="StoresXml">
+      <soap:operation soapAction="http://tempuri.org/IStoreService/StoresXml" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StoresJson">
+      <soap:operation soapAction="http://tempuri.org/IStoreService/StoresJson" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StoreService">
+    <wsdl:port name="BasicHttpBinding_IStoreService" binding="tns:BasicHttpBinding_IStoreService">
+      <soap:address location="http://localhost:90/wcf-iis/StoreService.svc/soap"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+  <xs:element name="StoresXml">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StoresXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StoresXmlResult" nillable="true" type="q1:StoresResponse" xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StoresJson">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StoresJsonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StoresJsonResult" nillable="true" type="q2:StoresResponse" xmlns:q2="http://schemas.datacontract.org/2004/07/wcf_iis.data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_iis.data" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_iis.data">
+  <xs:import schemaLocation="http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+  <xs:complexType name="StoresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Stores" nillable="true" type="q1:ArrayOfStore" xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_iis.model"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StoresResponse" nillable="true" type="tns:StoresResponse"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_iis.model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_iis.model">
+  <xs:complexType name="ArrayOfStore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStore" nillable="true" type="tns:ArrayOfStore"/>
+  <xs:complexType name="Store">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Number" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Store" nillable="true" type="tns:Store"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/StoreService.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:90/wcf-iis/StoreService.svc/soap</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/IStoreService/StoresJson" name="StoresJson" bindingOperationName="StoresJson" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/StoreService.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:StoresJson/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IStoreService/StoresJson"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/IStoreService/StoresXml" name="StoresXml" bindingOperationName="StoresXml" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/StoreService.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:StoresXml/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IStoreService/StoresXml"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="BasicHttpBinding_IJrTest" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IJrTest" soapVersion="1_1" anonymous="optional" definition="http://localhost:90/wcf-iis/jrtest.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:90/wcf-iis/jrtest.svc?wsdl"><con:part><con:url>http://localhost:90/wcf-iis/jrtest.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="JrTest" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IJrTest_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test"/>
+  </wsdl:message>
+  <wsdl:message name="IJrTest_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IJrTest_TestXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestXml"/>
+  </wsdl:message>
+  <wsdl:message name="IJrTest_TestXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestXmlResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IJrTest">
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJrTest/Test" message="tns:IJrTest_Test_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IJrTest/TestResponse" message="tns:IJrTest_Test_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="TestXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJrTest/TestXml" message="tns:IJrTest_TestXml_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IJrTest/TestXmlResponse" message="tns:IJrTest_TestXml_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IJrTest" type="tns:IJrTest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/IJrTest/Test" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestXml">
+      <soap:operation soapAction="http://tempuri.org/IJrTest/TestXml" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JrTest">
+    <wsdl:port name="BasicHttpBinding_IJrTest" binding="tns:BasicHttpBinding_IJrTest">
+      <soap:address location="http://localhost:90/wcf-iis/JrTest.svc/soap"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q1:JrTestRequest" xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" nillable="true" type="q2:JrTestRequest" xmlns:q2="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q3:JrTestRequest" xmlns:q3="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestXmlResult" nillable="true" type="q4:JrTestRequest" xmlns:q4="http://schemas.datacontract.org/2004/07/wcf_iis.request"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wcf_iis.request" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/wcf_iis.request">
+  <xs:complexType name="JrTestRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TestParam" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="JrTestRequest" nillable="true" type="tns:JrTestRequest"/>
+  <xs:complexType name="BaseRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRequest" nillable="true" type="tns:BaseRequest"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:90/wcf-iis/JrTest.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:90/wcf-iis/JrTest.svc</con:endpoint><con:endpoint>http://localhost:90/wcf-iis/JrTest.svc/soap</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/IJrTest/Test" name="Test" bindingOperationName="Test" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/JrTest.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/wcf_iis.request">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Test>
+         <!--Optional:-->
+         <tem:request>
+            <!--Optional:-->
+            <wcf:Application>?</wcf:Application>
+            <!--Optional:-->
+            <wcf:Country>?</wcf:Country>
+            <!--Optional:-->
+            <wcf:Language>?</wcf:Language>
+            <!--Optional:-->
+            <wcf:Version>?</wcf:Version>
+            <!--Optional:-->
+            <wcf:TestParam>?</wcf:TestParam>
+         </tem:request>
+      </tem:Test>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IJrTest/Test"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/IJrTest/TestXml" name="TestXml" bindingOperationName="TestXml" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:90/wcf-iis/JrTest.svc/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/wcf_iis.request">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:TestXml>
+         <!--Optional:-->
+         <tem:request>
+            <!--Optional:-->
+            <wcf:Application>?</wcf:Application>
+            <!--Optional:-->
+            <wcf:Country>?</wcf:Country>
+            <!--Optional:-->
+            <wcf:Language>?</wcf:Language>
+            <!--Optional:-->
+            <wcf:Version>?</wcf:Version>
+            <!--Optional:-->
+            <wcf:TestParam>?</wcf:TestParam>
+         </tem:request>
+      </tem:TestXml>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IJrTest/TestXml"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>

@@ -1,0 +1,4 @@
+wcf-iis/obj
+wcf-iis/obj/*
+wcf-iis/bin 
+wcf-iis/bin/*
