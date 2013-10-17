@@ -16,6 +16,5 @@ namespace mvc_iis.Controllers
             return Json(Mock.Vouchers(storeNumber), JsonRequestBehavior.AllowGet);
         }
 
-
     }
 }

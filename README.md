@@ -44,4 +44,11 @@ WEB		{storeNumber}		GET		http://localhost:90/mvc-iis/Voucher/{STORENUMBER}
 WEB		json/{storeNumber}	GET		http://localhost:90/mvc-iis/Voucher/json/{STORENUMBER}
 </pre>
 
+* webapi-iis VoucherController
+<pre>
+WEB		{storeNumber}		GET		http://localhost:90/webapi-iis/Voucher
+WEB		json/{storeNumber}	GET		http://localhost:90/webapi-iis/Voucher/{VOUCHERCODE}
+</pre>
+
+
 

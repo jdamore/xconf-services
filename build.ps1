@@ -28,6 +28,7 @@ Task setupiis {
 	CreateSite     xconf 90
 	AddApplication xconf wcf-iis
 	AddApplication xconf mvc-iis
+	AddApplication xconf webapi-iis
 }
 
 ##########################
