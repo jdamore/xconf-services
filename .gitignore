@@ -6,6 +6,10 @@ mvc-iis/obj
 mvc-iis/obj/*
 mvc-iis/bin 
 mvc-iis/bin/*
+webapi-iis/obj
+webapi-iis/obj/*
+webapi-iis/bin 
+webapi-iis/bin/*
 xconf-core/obj
 xconf-core/obj/*
 xconf-core/bin 

@@ -13,6 +13,7 @@ Content
 
 * [wcf-iis](http://github.com/jdamore/xconf-services/tree/master/wcf-iis) contains sample WCF services
 * [mvc-iis](http://github.com/jdamore/xconf-services/tree/master/mvc-iis) contains sample MVC services
+* [webapi-iis](http://github.com/jdamore/xconf-services/tree/master/mvc-iis) contains sample WebApi services
 * [build.ps1](http://github.com/jdamore/xconf-services/blob/master/build.ps1) is the Psake build file
 
 Bootstrap Environment
