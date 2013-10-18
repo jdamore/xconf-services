@@ -51,5 +51,11 @@ WEB		{storeNumber}		GET		http://localhost:90/webapi-iis/api/Voucher
 WEB		json/{storeNumber}	GET		http://localhost:90/webapi-iis/api/Voucher/{VOUCHERCODE}
 </pre>
 
+* client-iis
+<pre>
+WEB			http://localhost:90/client-iis/web
+SOAP		http://localhost:90/client-iis/soap
+</pre>
+
 
 
