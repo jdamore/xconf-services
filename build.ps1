@@ -10,7 +10,7 @@
 ##########################
 
 properties {
-	$environment = GetEnvVariable GO_ENVIRONMENT ci
+	$environment = GetEnvVariable GO_ENVIRONMENT Debug
 }
 
 ##########################
@@ -29,6 +29,7 @@ Task setupiis {
 	AddApplication xconf wcf-iis
 	AddApplication xconf mvc-iis
 	AddApplication xconf webapi-iis
+	AddApplication xconf client-iis
 }
 
 ##########################

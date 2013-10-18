@@ -17,5 +17,10 @@ namespace xconf_core.helper
         {
             return BaseUrl + "/" + service + ".svc";
         }
+
+        public static string SoapServiceUrl(string service)
+        {
+            return BaseUrl + "/" + service + ".svc/soap";
+        }
     }
 }

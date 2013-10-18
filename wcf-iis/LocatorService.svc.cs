@@ -11,6 +11,9 @@ namespace wcf_iis
     public interface ILocatorService
     {
         [OperationContract]
+        List<Service> Locations();
+
+        [OperationContract]
         [WebInvoke(
             Method          = "GET",
             ResponseFormat  = WebMessageFormat.Xml,
@@ -30,16 +33,30 @@ namespace wcf_iis
     public class LocatorService : ILocatorService
     {
 
+        public List<Service> Locations()
+        {
+            var serviceLocations = new List<Service>();
+            foreach (var service in ConfigHelper.GetServices())
+            {
+                serviceLocations.Add(new Service
+                {
+                    Name = service,
+                    Url = UrlHelper.SoapServiceUrl(service)
+                });
+            }
+            return serviceLocations;
+        }
+
         public List<Service> LocationsXml()
         {
             var serviceLocations = new List<Service>();
             foreach (var service in ConfigHelper.GetServices())
             {
                 serviceLocations.Add(new Service
-                    {
-                        Name = service,
-                        Url = UrlHelper.ServiceUrl(service)
-                    });
+                {
+                    Name = service,
+                    Url = UrlHelper.ServiceUrl(service)
+                });
             }
             return serviceLocations;
         }

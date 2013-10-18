@@ -1,3 +1,4 @@
+
 wcf-iis/obj
 wcf-iis/obj/*
 wcf-iis/bin 
@@ -6,10 +7,16 @@ mvc-iis/obj
 mvc-iis/obj/*
 mvc-iis/bin 
 mvc-iis/bin/*
+
 webapi-iis/obj
 webapi-iis/obj/*
 webapi-iis/bin 
 webapi-iis/bin/*
+
+client-iis/obj
+client-iis/obj/*
+client-iis/bin 
+client-iis/bin/*
 xconf-core/obj
 xconf-core/obj/*
 xconf-core/bin 

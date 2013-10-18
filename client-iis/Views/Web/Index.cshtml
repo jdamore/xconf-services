@@ -1,0 +1,28 @@
+﻿@model client_iis.Controllers.WebController.ViewModel
+
+@{
+    Layout = null;
+}
+
+<head>
+    <title>XConf Web HTTP Client</title>
+</head>
+<form method="post" action="@Url.Action("Submit", "Web")">
+    <div id="request">
+        <h1>XConf Web HTTP Client</h1>
+        <p>Url <input name="Url" value="@Model.Url" size="60" /></p>
+        <p>Params <input name="Query" value="@Model.Query" size="60" /></p>
+        <select name="WebMethod">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+        <input type="submit"/>
+    </div>
+    <hr/>
+    <div id="response" itemid="">
+        Response<br/><br/>
+        @Model.Response
+    </div>
+</form>

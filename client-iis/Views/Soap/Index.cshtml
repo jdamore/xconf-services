@@ -1,0 +1,21 @@
+﻿@model client_iis.Controllers.SoapController.ViewModel
+
+@{
+    Layout = null;
+}
+
+<head>
+    <title>XConf Web HTTP Client</title>
+</head>
+<form method="post" action="@Url.Action("Submit", "Soap")">
+    <div id="request">
+        <h1>XConf Web SOAP Client</h1>
+        <p>Service @Html.DropDownListFor(m => m.SelectecServiceName, Model.ServiceItems)
+        <input type="submit"/>
+    </div>
+    <hr/>
+    <div id="response" itemid="">
+        Response<br/><br/>
+        @Model.Response
+    </div>
+</form>
